@@ -16,7 +16,7 @@
                     @for($i = 1; $i <= $datas['input']; $i++)
                     <div class="input-group mb-3">
                         <span class="input-group-text px-4 bg-secondary" id="basic-addon1">{{$i}}</span>
-                        <input name="xinput{{$i}}" type="number" min="0" class="form-control" placeholder="Input" required>
+                        <input name="xinput{{$i}}" type="number" class="form-control" placeholder="Input" required>
                     </div>
                     @endfor 
                 </div> 
@@ -26,7 +26,7 @@
                     @for($i = 1; $i <= $datas['input']; $i++)
                     <div class="input-group mb-3">
                         <span class="input-group-text px-4 bg-secondary" id="basic-addon1">{{$i}}</span>
-                        <input name="yinput{{$i}}" type="number" min="0" class="form-control" placeholder="Input" required>
+                        <input name="yinput{{$i}}" type="number" class="form-control" placeholder="Input" required>
                     </div>
                     @endfor 
                 </div> 
