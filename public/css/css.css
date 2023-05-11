@@ -44,6 +44,10 @@ body {
     background-color: #DF9300;
 }
 
+.btn:active {
+    background-color: rgba(230, 189, 110, 0.75) !important;
+}
+
 table {
     border: 3px solid #DF9300 !important;
 }

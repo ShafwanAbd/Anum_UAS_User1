@@ -85,7 +85,7 @@
                                 <math>
                                     <mi>a</mi>
                                     <mo>=</mo>
-                                    <mi>{{ (($hasil['ytotal'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xytotal'])) / (($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal'])) }}</mi>
+                                    <mi>{{ number_format((($hasil['ytotal'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xytotal'])) / (($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal'])), 2) }}</mi>
                                 </math>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                                 <math>
                                     <mi>b</mi>
                                     <mo>=</mo>
-                                    <mi>{{ (($data['berapaInput'] * $hasil['xytotal']) - ($hasil['xtotal'] * $hasil['ytotal'])) / (($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal'])) }}</mi>
+                                    <mi>{{ number_format((($data['berapaInput'] * $hasil['xytotal']) - ($hasil['xtotal'] * $hasil['ytotal'])) / (($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal'])), 2) }}</mi>
                                 </math>
                             </div>
                         </div> 
@@ -292,7 +292,7 @@
                                 <mi>{{ ($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal']) }}</mi>
                             </mfrac>
                             <mo>=</mo>
-                            <mn>{{ (($hasil['ytotal'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xytotal'])) / (($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal'])) }}</mn>
+                            <mn>{{ number_format((($hasil['ytotal'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xytotal'])) / (($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal'])), 2) }}</mn>
                         </math>
                     </div>
                     <div class="">
@@ -304,7 +304,7 @@
                                 <mi>{{ ($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal']) }}</mi>
                             </mfrac>
                             <mo>=</mo>
-                            <mn>{{ (($data['berapaInput'] * $hasil['xytotal']) - ($hasil['ytotal'] * $hasil['xtotal'])) / (($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal'])) }}</mn>
+                            <mn>{{ number_format((($data['berapaInput'] * $hasil['xytotal']) - ($hasil['ytotal'] * $hasil['xtotal'])) / (($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal'])), 2) }}</mn>
                         </math>
                     </div> 
                 </div>
@@ -354,7 +354,7 @@
                             <math>
                                 <mi>b</mi>
                                 <mo>=</mo>
-                                <mi>{{ (($data['berapaInput'] * $hasil['xytotal']) - ($hasil['xtotal'] * $hasil['ytotal'])) / (($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal'])) }}</mi>
+                                <mi>{{ number_format((($data['berapaInput'] * $hasil['xytotal']) - ($hasil['xtotal'] * $hasil['ytotal'])) / (($data['berapaInput'] * $hasil['x2total']) - ($hasil['xtotal'] * $hasil['xtotal'])), 2) }}</mi>
                             </math>
                         </div>
                     </div>
@@ -378,7 +378,7 @@
                             <math>
                                 <mi>a</mi>
                                 <mo>=</mo>
-                                <mi>{{ $hasil['yrata'] - ($hasil['b'] * $hasil['xrata']) }}</mi>
+                                <mi>{{ number_format($hasil['yrata'] - ($hasil['b'] * $hasil['xrata']), 2) }}</mi>
                             </math>
                         </div> 
                     </div> 
@@ -387,7 +387,7 @@
 
             <h3 class="mx-5 mt-5 mb-3 t-primary title">Persamaan Regresi Linear</h3>
 
-            <p class="text-center fst-italic fs-4"><math><mi>Y</mi><mo>=</mo><mi>{{ $hasil['a'] }} + {{ $hasil['b'] }}x</mi></math></p>
+            <p class="text-center fst-italic fs-4"><math><mi>Y</mi><mo>=</mo><mi>{{ number_format($hasil['a'], 2) }} + {{ number_format($hasil['b'], 2) }}x</mi></math></p>
 
         </div>
 </div>

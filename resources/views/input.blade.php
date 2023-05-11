@@ -12,7 +12,7 @@
             <div class="row">
 
                 <div class="col"> 
-                    <h3 class="text-center mb-3">X</h3> 
+                    <h3 class="text-center mb-3 fw-bolder">X</h3> 
                     @for($i = 1; $i <= $datas['input']; $i++)
                     <div class="input-group mb-3">
                         <span class="input-group-text px-4 bg-secondary" id="basic-addon1">{{$i}}</span>
@@ -22,7 +22,7 @@
                 </div> 
 
                 <div class="col"> 
-                    <h3 class="text-center mb-3">Y</h3> 
+                    <h3 class="text-center mb-3 fw-bolder">Y</h3> 
                     @for($i = 1; $i <= $datas['input']; $i++)
                     <div class="input-group mb-3">
                         <span class="input-group-text px-4 bg-secondary" id="basic-addon1">{{$i}}</span>
